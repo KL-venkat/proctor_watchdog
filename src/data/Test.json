@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "question": "1. A class is a type of function, but instead of using the keyword function to initiate it, which keyword do we use?",
+      "choices": ["constructor","class","Object","data object"],
+      "answer": "class"
+    },
+    {
+      "question": "2. What of the following is used in React.js to increase performance?",
+      "choices": ["Virtual DOM","Original DOM","Both A & B","None of these"],
+      "answer": "Virtual DOM"
+    },
+    {
+      "question": "3. Which of the following acts as the input of a class-based componen",
+      "choices": ["Props","render","factory","class"],
+      "answer": "Props"
+    },
+    {
+      "question": "4. Which of the following keyword is used to create a class inheritance?",
+      "choices": ["inherits","this","extends","create"],
+      "answer": "Belgrade"
+    },
+    {
+      "question": "5. What is the default port where webpack-server runs?",
+      "choices": ["4040","3000","8088","5001"],
+      "answer": "3000"
+    },
+    {
+      "question":"6. How many numbers of elements a valid react component can return?",
+      "choices": ["1","2","3","6"],
+      "answer": "1"
+    },
+    {
+      "question": "7. What is the declarative way to render a dynamic list of components based on values in an array?",
+      "choices": ["Using the reduce array method","Using the <Each /> component","Using the Array.map() method","With a for/while loop"],
+      "answer": "Using the Array.map() method"
+    },
+    {
+      "question": "8. What is the use of webpack command in React.js?",
+      "choices": ["The webpack command is used to transpile all the JavaScript down into one file.","It runs React local development server.","It is a module bundler."],
+      "answer":"It is a module bundler."
+    },
+    {
+      "question":"9.  Which of the following is used to pass data to a component from outside in React.js?",
+      "choices": ["props","setstate","proptypes","Render with arguments"],
+      "answer": "props"
+    }
+  ]
+}
