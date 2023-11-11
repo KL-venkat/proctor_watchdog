@@ -11,7 +11,7 @@
 
 - 📫 How to reach me **venkatkoppula22@gmail.com**
 
-<h3 align="left">Connect with me: **https://www.linkedin.com/in/venkatkoppula/** </h3>
+<h3 align="left">Connect with me: <a href="https://www.linkedin.com/in/venkatkoppula/" target="_blank">Let's connect </a> </h3>
 <p align="left">
 </p>
 
