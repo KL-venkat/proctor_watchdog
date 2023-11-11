@@ -7,11 +7,11 @@
 
 - 🌱 I’m currently learning **Angualr, mastering front end technologies**
 
-- 💬 Ask me about **React, angular, web stack**
+- 💬 Ask me about **React, web stack**
 
 - 📫 How to reach me **venkatkoppula22@gmail.com**
 
-<h3 align="left">Connect with me:</h3>
+<h3 align="left">Connect with me: <a href="https://www.linkedin.com/in/venkatkoppula/"/a></h3>
 <p align="left">
 </p>
 
