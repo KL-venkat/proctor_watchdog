@@ -1,0 +1,140 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  margin-top: 200px;
+  margin-bottom: 25px;
+  
+}
+
+.App .card {
+  max-width: 95%;
+  width: 100%;
+  text-align: center;
+  background-color: grey;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+label.radio {
+  display: block;
+  text-align: left;
+  padding: 25px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+label.radio+.radio {
+  margin-left: 0;
+}
+
+label.radio input {
+  margin-right: 10px;
+  transform: scale(2.5);
+margin-right: 45px;
+margin-bottom: 20px;
+}
+
+h1.ui.left.aligned.header {
+  background-color: grey;
+  padding: 30px;
+  color:white;
+  font-size: 50px;
+  font-weight: 100px;
+}
+
+label.radio.has-background-light {
+  padding-block: 3rem;
+  border-radius: 1rem;
+}
+h1.mb-5 {
+  color:white;
+  font-size: 50px;
+}
+
+p {
+  font-size: 50px;
+  color: white;
+}
+
+h1.ui.white.header {
+  font-size: 50px;
+  color: aliceblue;
+}
+h3.ui.header {
+  font-size: xx-large;
+  color: skyblue;
+}
+.card-content {
+  padding: 150px;
+  margin-bottom:2rem
+}
+.ui.container {
+  padding-left: 10rem;
+
+}
+h4 {
+  text-align: right;
+  /* padding-right:20% */
+  
+}
+.has-text-danger {
+  color: #0d0410b0!important;
+  font-size: 50px;
+  font-weight: 20px;
+}
+
+.ui.scrolling.modal.transition.visible.active {
+    
+  padding: 30px;
+ 
+  margin-bottom: 50;
+  
+  text-align: left;
+  padding-top: 15%;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+.content {
+  font-size: 25px;
+  
+  padding:60px;
+ 
+}
+
+.has-text-danger {
+  color: #1e1c1c!important;
+}
+h4.modall {
+  /* padding-right: 100px !important; */
+  margin-right:10rem !important
+  
+}
+
+/* for reference: */
+/* div {
+  background-color: rebeccapurple;
+} */
+span {
+  color: rgb(7, 14, 17);
+}
+
+.content h2:not(:first-child) {
+  margin-top: 1.1428em;
+  color: whitesmoke;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
+  margin-top: 0;
+  color: whitesmoke;
+}
+b, strong {
+  font-weight: bolder;
+  color: white;
+}
