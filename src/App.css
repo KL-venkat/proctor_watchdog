@@ -82,13 +82,15 @@ h3.ui.header {
 }
 h4 {
   text-align: right;
-  /* padding-right:20% */
+  padding-right:20% 
   
 }
 .has-text-danger {
-  color: #0d0410b0!important;
   font-size: 50px;
   font-weight: 20px;
+}
+.has-text-danger {
+  color: #d20c34 !important;
 }
 
 .ui.scrolling.modal.transition.visible.active {
@@ -113,28 +115,43 @@ h4 {
   color: #1e1c1c!important;
 }
 h4.modall {
-  /* padding-right: 100px !important; */
+
   margin-right:10rem !important
   
 }
 
-/* for reference: */
-/* div {
-  background-color: rebeccapurple;
-} */
+
 span {
-  color: rgb(7, 14, 17);
+  color: white;
 }
 
-.content h2:not(:first-child) {
-  margin-top: 1.1428em;
-  color: whitesmoke;
+strong {
+  color: white !important;
+  font-weight: 700;
 }
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
-  margin-top: 0;
-  color: whitesmoke;
+
+ .content h2, .content h3, .content h4, .content h5, .content h6 {
+  /* color: #363636; */
+  /* color: whitesmoke !important; */
+   color: black !important; 
+  font-weight: 600;
+  line-height: 1.125;
 }
-b, strong {
-  font-weight: bolder;
-  color: white;
+.questions {
+  color: black;
+}
+
+/*for Timer */
+
+/* p#count-time {
+  text-align: right;
+  margin-bottom: 2%;
+} */
+.timerDiv {
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+
+.ui.red.huge.button {
+  margin-right: 55px;
 }

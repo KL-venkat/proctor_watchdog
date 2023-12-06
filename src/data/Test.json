@@ -44,6 +44,11 @@
       "question":"9.  Which of the following is used to pass data to a component from outside in React.js?",
       "choices": ["props","setstate","proptypes","Render with arguments"],
       "answer": "props"
+    },
+    {
+      "question":"10. What happens if you render an input element with disabled = {false}?",
+      "choices": ["it will be rendered as enabled","it will be rendered as disabled","None of the above","it will not rendered at all"],
+      "answer": "it will be rendered as enabled"
     }
   ]
 }

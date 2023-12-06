@@ -2,14 +2,23 @@ import React, { useState, useEffect, useRef } from 'react';
 import {Button,Header,Card,Container} from 'semantic-ui-react';
 import EndModal from './EndModal';
 import Application from './Application';
-import Modall from './Modall';
+import ModallEndTest from './Modall';
 import './Question.css'
+import MyTimer from './MyTimer';
+import { useTimer } from 'react-timer-hook';
+import End from './End';
 
 
-const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep }) => {
+const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep , handleClick, expiryTimestamp, results, quizdata, time}) => {
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
+  const [count, setCount] = useState(0);
+
+  const {seconds, minutes, hours} = useTimer({
+    expiryTimestamp,
+    onExpire: () => console.warn("onExpire called")
+  });
 
   useEffect(() => {
     const findCheckedInput = radiosWrapper.current.querySelector('input:checked');
@@ -38,20 +47,32 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     }
   }
  
+  if(seconds === 0 && minutes === 0 && hours === 0)
+  {
+    console.log("Time ended");
+    return(
+      <End 
+      results={results}
+      quizdata={quizdata}
+      time={time}
+      />
+    )
+  }
   return(
 
       <>
-      
+    
       <Container>
       <div  className="card">
         <div className="card-content">
           <div className="content"> 
-           <p>{data.question}</p>
+          <MyTimer expiryTimestamp={expiryTimestamp}/>
+           <p className='questions'>{data.question}</p>
            {/* <Header as='h1' color='red'>{data.question}</Header> */}
             <div className="control" ref={radiosWrapper}>
               {data.choices.map((choice, i) => (
               <label  className="radio has-background-light" key={i}>
-              <h1> <input  type="radio" name="answer" size='h1' value={choice} onChange={changeHandler} />
+              <h1> <input  type="radio" name="answer" size='h1' color='black' value={choice} onChange={changeHandler} />
                 {choice}</h1> 
               </label>
               ))}
@@ -60,23 +81,7 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
           </div>}
         </div>
       </div>
-              
-        {/* <button className="button is-link is-medium is-fullwidth mt-4" onClick={nextClickHandler}>Next</button> */}
-        {/* </div>
 
-        
-        {/* </Card.Content>
-        </Card> */}
-
-      <div>
-     
-      {/* <Button color='red' textAlign='center' onClick={ <EndModal/>}>End Test</Button>  */}
-      
-      </div>
-   
-      {/* <Button size="huge" color='blue' textAlign='center' onClick={nextClickHandler}>Next</Button > 
-      <EndModal/> */}
-      
      </div>
 
       
@@ -84,10 +89,11 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
      <Button size="huge" color='blue' textAlign='center' onClick={nextClickHandler}>Next</Button >  
 
      {/* <EndModal/> */}
-      <Modall/>
+      <ModallEndTest/>
       </h4>
-      
-      </Container>
+     
+     </Container>
+     
      
      </>
   )
