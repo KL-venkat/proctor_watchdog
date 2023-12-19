@@ -15,7 +15,7 @@ function Application() {
           setModalOpen(true);
         }}
       >
-        End Test
+        End Test1
       </Button>
 
       {modalOpen && <Modall setOpenModal={setModalOpen} />}

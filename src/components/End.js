@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-import { formatTime } from '../utils';
-
-
 const End = ({ results, quizdata, onReset, onAnswersCheck, time,seconds }) => {
   const [correctAnswers, setCorrectAnswers] = useState(0);
 
@@ -24,12 +21,11 @@ const End = ({ results, quizdata, onReset, onAnswersCheck, time,seconds }) => {
         <div className="content">
           <p className='endtest'>Your results</p>
           <p>{correctAnswers} of {quizdata.length}</p>
-          <p className='endtest'><strong>{Math.floor((correctAnswers / quizdata.length) * 100)}%</strong></p>
+          <p className='endtest'>Achieved:<strong>{Math.floor((correctAnswers / quizdata.length) * 100)}%</strong></p>
           <p className='endtest'>Greetings, Thanks for taking test Our Recruiting team will get back to you!</p>
         </div>
       </div>
     </div>
-
     </>
   );
 }

@@ -7,7 +7,7 @@ import Question from './components/Question';
 import End from './components/End';
 import Modal from './components/Modal';
 import quizData from './data/Test.json';
-import {Header,Button} from 'semantic-ui-react';
+import {Header} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
 
 

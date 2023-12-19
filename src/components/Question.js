@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {Button,Header,Card,Container} from 'semantic-ui-react';
-import EndModal from './EndModal';
-import Application from './Application';
+import {Button,Container} from 'semantic-ui-react';
 import ModallEndTest from './Modall';
 import './Question.css'
 import MyTimer from './MyTimer';
@@ -9,11 +7,11 @@ import { useTimer } from 'react-timer-hook';
 import End from './End';
 
 
-const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep , handleClick, expiryTimestamp, results, quizdata, time}) => {
+const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, 
+  onSetStep ,  expiryTimestamp, results, quizdata, time}) => {
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
-  const [count, setCount] = useState(0);
 
   const {seconds, minutes, hours} = useTimer({
     expiryTimestamp,
