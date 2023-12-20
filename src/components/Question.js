@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {Button,Container} from 'semantic-ui-react';
+import {Button,Container, Card, Header} from 'semantic-ui-react';
 import ModallEndTest from './Modall';
 import './Question.css'
-import MyTimer from './MyTimer';
+import MyTimer from './MyTimer'; 
 import { useTimer } from 'react-timer-hook';
 import End from './End';
 
@@ -57,13 +57,10 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
     )
   }
   return(
-
-      <>
-    
-      <Container>
+    <>
+      <Container className='displayQuestions'>
       <div  className="card">
-        <div className="card-content">
-          <div className="content"> 
+        
           <MyTimer expiryTimestamp={expiryTimestamp}/>
            <p className='questions'>{data.question}</p>
            {/* <Header as='h1' color='red'>{data.question}</Header> */}
@@ -75,26 +72,20 @@ const Question = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onS
               </label>
               ))}
             </div>
-            {error && <div className="has-text-danger">{error} 
+            {error && <div className="has-text-error">{error} 
           </div>}
         </div>
-      </div>
-
-     </div>
-
       
       <h4 className='modall'>
-     <Button size="huge" color='blue' textAlign='center' onClick={nextClickHandler}>Next</Button >  
+     <Button size="medium" color='blue' textAlign='center' onClick={nextClickHandler}>Next</Button >  
 
      {/* <EndModal/> */}
       <ModallEndTest/>
       </h4>
      
      </Container>
-     
-     
-     </>
+
+    </>
   )
-}
-      
+}      
 export default Question;

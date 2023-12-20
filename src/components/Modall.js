@@ -12,7 +12,7 @@ const ModallEndTest = () => {
       onClose={() => setOpen(false)}
       onOpen={() => setOpen(true)}
       open={open}
-      trigger={<Button size='huge' color='red'>End Test</Button>}  
+      trigger={<Button size='medium' color='red'>End Test</Button>}  
     >
       
       <Modal.Description>

@@ -7,7 +7,7 @@ import Question from './components/Question';
 import End from './components/End';
 import Modal from './components/Modal';
 import quizData from './data/Test.json';
-import {Header} from 'semantic-ui-react';
+import {Header, Icon} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
 
 
@@ -77,9 +77,9 @@ import 'semantic-ui-css/semantic.min.css'
     <>
      {/* <div><CandidateInfo/></div> */}
       <div className="flex-container">
-        <Header as='h1' textAlign='left'>Online Examination </Header> 
+        <Header as='h1' textAlign='left'>Online Examination <Icon className="men" name='bars' corner="ceter"/></Header> 
       </div>
-     
+     <br/>
       <div className="App">
     
        {step === 1 && <Start onQuizStart={quizStartHandler} />}
@@ -118,10 +118,7 @@ import 'semantic-ui-css/semantic.min.css'
       <br/>
       <div>
       </div>
-      <br/>
-   
-      
-     
+      <br/> 
     </>
   )
     
