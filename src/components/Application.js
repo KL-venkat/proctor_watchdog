@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Button } from "semantic-ui-react";
-
 import Modall from "./Modall";
 
 function Application() {

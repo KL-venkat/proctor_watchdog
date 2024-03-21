@@ -39,7 +39,7 @@ import 'semantic-ui-css/semantic.min.css'
       else
         DIV.requestFullscreen()
      
-     interval = setInterval(() => {
+    interval = setInterval(() => {
      
       setTime(prevTime => prevTime + 1);
     }, 1000);
@@ -64,14 +64,11 @@ import 'semantic-ui-css/semantic.min.css'
       setIntervalId(0);
       return;
     }
-
     const newIntervalId = setInterval(() => {
       setCount(prevCount => prevCount + 1);
     }, 1000);
     setIntervalId(newIntervalId);
   };
-
-
 
   return (
     <>
@@ -120,8 +117,6 @@ import 'semantic-ui-css/semantic.min.css'
       </div>
       <br/> 
     </>
-  )
-    
-
+  )   
 }
 export default App;
