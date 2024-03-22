@@ -1,42 +1,162 @@
+html,
+body,
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+
+}
+
+label.radio.has-background-light {
+  margin-bottom: 11.5px;
+  border-radius: 0.5rem;
+  padding-bottom: 11.5px;
+}
+
+
+label.radio {
+  display: block;
+  text-align: left;
+  padding: 25px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+label.radio+.radio {
+  margin-left: 0;
+}
+
+label.radio input {
+  margin-right: 10px;
+  transform: scale(1.5);
+margin-right: 45px;
+}
+
+h1.ui.left.aligned.header {
+  background-color: grey;
+  padding: 10px;
+  color:white;
+  font-size: 30px;
+  font-weight: 100px;
+}
+h1.mb-5 {
+  color:white;
+  font-size: 40px;
+}
+
+p {
+  font-size: 50px;
+  color: white;
+}
+
+h1.ui.white.header {
+  font-size: 40px;
+  color: aliceblue;
+}
+h3.ui.header {
+  font-size: xx-large;
+  color: skyblue;
+}
+.ui.container {
+  padding-left: 10rem;
+
+}
+h4 {
+  text-align: right;
+  padding-right:20% 
+  
+}
+
+.ui.scrolling.modal.transition.visible.active {
+    
+  padding: 30px;
+ 
+  margin-bottom: 50;
+  
+  text-align: left;
+  padding-top: 15%;
+  margin-bottom: 80px;
+  font-size: 36px;
+}
+.content {
+  font-size: 25px;
+  
+  padding:60px;
+ 
+}
+span {
+  color: white;
+}
+
+strong {
+  color: white !important;
+  font-weight: 700;
+}
+.content h2, .content h3, .content h4, .content h5, .content h6 {
+  color: black !important; 
+  font-weight: 600;
+  line-height: 1.125;
+}
+.timerDiv {
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+
+.ui.red.huge.button {
+  margin-right: 55px;
+}
+.questions {
+  color: whitesmoke;
+  font-size: x-large;
+}
+p.timeLeft {
+  font-size: xx-large;
+  color: #a51616;
+  font-style: italic;
+  font-family: cursive;
+  font-weight: bold;
+}
+.control {
+  font-size: 1rem;
+  padding-bottom: -60%;
+  margin-bottom: -8%;
+}
+.App .card {
+  max-width: 95%;
+  width: 100%;
   text-align: center;
+  background-color: grey;
+  padding-bottom: 90px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+}
+h4.modall {
+  margin-top: 1rem !important;
+  margin-right: 4rem !important;
+}
+.has-text-error {
+  color: #bb0707!important;
+  padding-top: 8%;
+  margin-bottom: -9%;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: initial;
+}
+.ui.blue.fluid.card.test-results {
+  padding: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+i.bars.ceter.corner.icon.men {
+  padding-left: 75%;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
