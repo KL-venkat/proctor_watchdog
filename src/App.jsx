@@ -10,7 +10,6 @@ import quizData from './data/Test.json';
 import {Header, Icon} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
 
-
  let interval;
   const App = () => {
 
