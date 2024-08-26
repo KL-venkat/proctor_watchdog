@@ -13,6 +13,14 @@ import 'semantic-ui-css/semantic.min.css'
  let interval;
   const App = () => {
 
+    useEffect(() => {
+      
+      if (window.innerWidth <= 1024) {
+        alert("Taking Test is restricted on mobile devices. Please access it from a laptop or desktop.");
+       
+        window.location.href = "https://yoursite.com/mobile-restriction"; 
+      }});
+
   const timer = new Date();
   timer.setSeconds(timer.getSeconds() + 1200);  //time limit 20 min
   

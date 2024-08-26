@@ -9,7 +9,14 @@ body,
   align-items: center;
   justify-content: center;
   max-height: 100%;
+  padding-top: 8% !important;
 
+}
+.ui.card>.content>.description, .ui.cards>.card>.content>.description {
+  clear: both;
+  color: #0ec4db !important;
+  font-weight: bold;
+  font-size: larger;
 }
 
 label.radio.has-background-light {
@@ -157,6 +164,33 @@ h4.modall {
 i.bars.ceter.corner.icon.men {
   padding-left: 75%;
 }
+.ui.card>.content, .ui.cards>.card>.content {
+  
+  padding: 8em 1em !important;
+  
+}
+/* Default styling (for larger screens) */
+.ui.card > .content, 
+.ui.cards > .card > .content {
+  padding: 8em 1em !important;
+}
+
+/* Styling for tablets and larger mobile devices */
+@media (max-width: 768px) {
+  .ui.card > .content, 
+  .ui.cards > .card > .content {
+    padding: 4em 1em !important; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Styling for small mobile devices */
+@media (max-width: 480px) {
+  .ui.card > .content, 
+  .ui.cards > .card > .content {
+    padding: 12em 1em !important; /* Further reduce padding for very small screens */
+  }
+}
+
 
 
 
