@@ -7,7 +7,7 @@ import Question from './components/Question';
 import End from './components/End';
 import Modal from './components/Modal';
 import quizData from './data/Test.json';
-import {Header, Icon} from 'semantic-ui-react';
+import {Header, Icon, List, Popup, ListContent, ListDescription, ListHeader, ListIcon, ListItem} from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
 
  let interval;
@@ -81,7 +81,45 @@ import 'semantic-ui-css/semantic.min.css'
     <>
      {/* <div><CandidateInfo/></div> */}
       <div className="flex-container">
-        <Header as='h1' textAlign='left'>Online Examination <Icon className="men" name='bars' corner="ceter"/></Header> 
+        {/* <Header as='h1' textAlign='left'>Online Examination <Icon className="men" name='bars' corner="ceter"/></Header>  */}
+        {/* <Header as='h1' textAlign='left'>Online Examination  */}
+          <Popup 
+            wide='very'
+            header ='Instructions'
+            content={<List divided relaxed>
+              <ListItem>
+                <ListIcon name='right triangle' size='large' verticalAlign='middle' />
+                <ListContent>
+                  {/* <ListHeader as='a'>Time limit</ListHeader> */}
+                  <ListDescription as='a'> Test accessible only in desktop/lap</ListDescription>
+                </ListContent>
+              </ListItem>
+              <ListItem>
+                <ListIcon name='right triangle' size='large' verticalAlign='middle' />
+                <ListContent>
+                  {/* <ListHeader as='a'>Proctoring</ListHeader> */}
+                  <ListDescription as='a'>Timer is auto triggered upon test start</ListDescription>
+                </ListContent>
+              </ListItem>
+              <ListItem>
+                <ListIcon name='right triangle' size='large' verticalAlign='middle' />
+                <ListContent>
+                  {/* <ListHeader as='a'>No negative marks</ListHeader> */}
+                  <ListDescription as='a'>Negative marking enabled</ListDescription>
+                </ListContent>
+              </ListItem>
+            </List>}
+            
+            trigger={<Header as='h1' 
+              className="info" 
+              textAlign='left' 
+              content='Online 
+              Examination' 
+              color='white'
+            />}
+            className="men" name='bars' corner="ceter"
+          />
+        {/* </Header>  */}
       </div>
      <br/>
       <div className="App">

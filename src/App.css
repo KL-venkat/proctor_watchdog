@@ -13,10 +13,10 @@ body,
 
 }
 .ui.card>.content>.description, .ui.cards>.card>.content>.description {
-  clear: both;
-  color: #0ec4db !important;
-  font-weight: bold;
-  font-size: larger;
+    clear: both;
+    color: #0ec4db;
+    font-weight: bold;
+    font-size: larger;
 }
 
 label.radio.has-background-light {
@@ -190,6 +190,7 @@ i.bars.ceter.corner.icon.men {
     padding: 12em 1em !important; /* Further reduce padding for very small screens */
   }
 }
+
 
 
 
